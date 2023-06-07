@@ -1,0 +1,144 @@
+* { margin: auto; padding: 0; font-family:arial; }
+
+/*body: cuerpo de la página+/
+body { background-color: #f4d4d3; }
+
+/*cabecera*/
+header { background-color:#ADB1B5; }
+header h1 { text-align: center; color: black; padding: 0.5em; font-size: 1.5em; font-family: "Baguet Script"; }
+header h2 { text-align: center; color: black; padding: 0.5em; font-size: 1.2em1;font-family: "Baguet Script"; }
+
+/*navegador*/
+nav { background-color: #EEEEEE; min-height: 2em; text-align: center ; }
+nav p{ display: inline; }
+nav a:link, nav a:visited { text-align: center ; text-decoration: none; color: #000000 ; background-color: none ; margin: 0.5em; font-family: 'Berlin Sans FB Demi'; }
+nav a:hover, nav a:active { text-decoration: none; color: white; background-color: #CD6155; margin: 0.5em; } 
+
+/*principal: section:*/
+section { width: 75%; background-color: #D6DBDF ; float: left; }
+section h1 { text-align: center; padding: 0.5em; color: olive; font-size: 2.5em; font-family:"Century Gothic"; }
+section h2 { text-align: center; padding: 0.5em; color: grey; font-size: 1.3em;font-family:"Century Gothic" } 
+section h3 { text-align: left; padding: 0.3em 3em; color: #663366; font-size: 1.5em;font-family:"Century Gothic" }
+section h4 { text-align: left; padding: 0.5em; color: #EFA10E; font-size: 1.3em;font-family:"Century Gothic" }
+
+#menu{ background-color:#EEEEEE; }
+#menu ul{ list-style:none; margin:0; padding:0; }
+#menu ul li{ display:inline-block;font-size: 18px;}
+
+/*parrafos: parrafo*/
+p { margin: 0.5em 3em; }
+p { text-align: justify;font-family:"Agency FB" ; font-size: 24px; }
+
+/*lista: numeracion*/
+li { margin: 0.5em 3em; }
+li { text-align: justify;font-family:"Agency FB" ; font-size: 24px; }
+ul li {text-align: none ; font-family:"Agency FB" ; }
+
+/*propaganda: aside*/
+aside { width: 25%; float: left; } 
+#anuncio1 { margin: 20px; padding: 10px; border: 2px solid #000000 ; background-color: #FFFFFF ; }
+#anuncio1 h1 { font-size: 1.1em; text-align:  center; padding: 0.2em 0em; }
+#anuncio1 h2 { font-size: 1.5em; text-align: center; padding: 0.5em 0em; } 
+#anuncio1 p { font-size: 0.9em; padding: 0.2em 1em; }
+
+/*pie de página: footer*/
+footer { clear: both; background-color: #222222; }
+footer h1 { text-align: left; font-size: 1.4em; color: #FFC300; padding: 1.5em; } 
+footer h2 { text-align: left; font-size: 1em; color: #52BAD5 ; padding: 1.5em; }
+footer a { text-decoration: none; color: lightseagreen; }
+
+/*Tabla cebra:Columna*/
+td { font-family:"Century Gothic"  }
+tbody: {background-color: #FFFFFF ; }
+tbody tr:nth-child(odd) { background-color: #222A35; text-align:  center; color: #FFFFFF; }
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  color: #FFC300;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 15px 15px 0px #D62000(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #FFC300;
+  padding: 10px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #55C1CD;
+  border: 1px solid #FBEEE6 ;
+}
+
+button { text-decoration: none; color: #000000 ; background-color: #FBEEE6; font-family: 'Berlin Sans FB Demi'; font-size: 18px; border: none;}
+
+.slider {
+	width: 120%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 300%;
+	
+	animation: cambio 15s infinite alternate linear;
+}
+
+.slider li {
+	width: 90%;
+	list-style: none;
+}
+
+.slider img {
+	width: 90%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+.imgRedonda {
+    width:300px;
+    height:300px;
+    border-radius:150px;
+}
+
+.text_column {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 90%;
+}
+.column {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.profile {
+	width: 100%;
+}
+.intro .column p {
+	width: 90%;
+	text-align: center;
+	padding-left: 0px;
+}
